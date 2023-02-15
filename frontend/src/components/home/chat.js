@@ -15,7 +15,7 @@ const Chat = ({users, setUsers}) => {
   React.useEffect( () => {
     axios({
         method: 'post',
-        url: 'http://localhost:8000/getusers',
+        url: 'https://fullstack-oy2s.onrender.com/getusers',
         data: {email:data.email}
     })
     .then((res)=>{

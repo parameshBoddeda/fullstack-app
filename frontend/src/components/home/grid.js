@@ -51,7 +51,7 @@ export default function GridTemplateRows({ users, setUsers, newUser }) {
     let initial = React.useRef(false)
     React.useMemo(() => {
         if (initial.current) {
-            axios.get(`http://localhost:8000/listusers?search=${selected}`)
+            axios.get(`https://fullstack-oy2s.onrender.com/listusers?search=${selected}`)
                 .then((res) => {
                     if (res.data.length) setUsers(res.data)
                     if (!res.data.length) setUsers([res.data])

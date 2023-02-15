@@ -42,7 +42,7 @@ const Signup = ({handleLogin}) => {
     if(initialRender.current){
       axios({
         method : 'post',
-        url: 'http://localhost:8000/signup',
+        url: 'https://fullstack-oy2s.onrender.com/signup',
         data:{
           username: data.username,
           email: data.email,

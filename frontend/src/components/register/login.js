@@ -39,7 +39,7 @@ const Login = () => {
     if (initialRender.current) {
       axios({
         method: 'post',
-        url: 'http://localhost:8000/login',
+        url: 'https://fullstack-oy2s.onrender.com/login',
         data: data
       })
         .then(() => {
